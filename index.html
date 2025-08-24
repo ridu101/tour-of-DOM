@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour of DOM</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
     <header>
         <h1>This is header no banner</h1>
@@ -19,9 +21,24 @@
         </ul>
     </main>
     <script>
-        console.log('hello world');
+
+        <!--all headings tag -->
+
+        const allHeading = document.getElementsByTagName('h1')
+        for (const headings of allHeading) {
+            console.log(headings.innerText);
+        }
+
+        //all li tag
+
+        const allList= document.getElementsByTagName('li');
+        for ( const list of allList){
+            console.log(list.innerText);
+        }
+
     </script>
     <script src="./js/hello.js"></script>
-    
+
 </body>
+
 </html>
