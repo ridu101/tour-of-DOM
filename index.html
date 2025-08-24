@@ -13,12 +13,29 @@
         <h1>This is header no banner</h1>
     </header>
     <main>
-        <h1>Welcome to my dom</h1>
+       <section>
+         <h1>Welcome to my dom</h1>
         <ul>
             <li>Shafayet</li>
             <li>Bonobash</li>
             <li>Jalali set</li>
         </ul>
+       </section>
+       <section>
+        <h1 id="food-title">food i love so much</h1>
+        <ul>
+            <li>vat</li>
+            <li class="deshi">mas</li>
+            <li class="deshi">dal</li>
+            <li class="deshi">polau</li>
+            <li class="deshi">roast</li>
+            <li>kurba</li>
+            <li>mangso </li>
+            <li>gosto</li>
+            <li>firni</li>
+            <li>jorda</li>
+        </ul>
+       </section>
     </main>
     <script>
 
@@ -26,14 +43,24 @@
 
         const allHeading = document.getElementsByTagName('h1')
         for (const headings of allHeading) {
-            console.log(headings.innerText);
+            //console.log(headings.innerText);
         }
 
         //all li tag
 
         const allList= document.getElementsByTagName('li');
         for ( const list of allList){
-            console.log(list.innerText);
+            //console.log(list.innerText);
+        }
+
+        // get by id 
+        const foodTilte= document.getElementById('food-title');
+        //console.log(foodTilte.innerText);
+
+        //get element by class
+        const deshiItem= document.getElementsByClassName('deshi');
+        for (const item of deshiItem){
+            console.log(item.innerText)
         }
 
     </script>
