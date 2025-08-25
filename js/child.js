@@ -1,8 +1,11 @@
+// create child or element
+
 const newChild= document.createElement('li');
 newChild.innerText='Messi is the greatest footballer';
 
-// find the parent 
+// 2.find the parent 
 
 const palyerList= document.getElementById('player-list');
-// append the child to the parent
+
+// 3. append the child to the parent
 palyerList.appendChild(newChild);
