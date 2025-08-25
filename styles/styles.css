@@ -5,3 +5,10 @@ li{
 h1{
     color: red;
 }
+
+.section-card{
+    background-color: aquamarine;
+    margin-bottom: 10px;
+    border-color: blue;
+    border: 3px solid red;
+}
